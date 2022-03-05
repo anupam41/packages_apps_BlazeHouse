@@ -29,7 +29,8 @@ import com.android.settings.R;
 
 import com.android.settings.SettingsPreferenceFragment;
 
-public class NitrogenSettings extends SettingsPreferenceFragment {
+public class BlazeHouse extends SettingsPreferenceFragment implements
+       Preference.OnPreferenceChangeListener {
 
     @Override
     public void onCreate(Bundle icicle) {
