@@ -54,9 +54,10 @@ import com.android.settings.SettingsPreferenceFragment;
 import github.com.st235.lib_expandablebottombar.ExpandableBottomBar;
 
 import com.blaze.house.categories.Lockscreen;
+import com.blaze.house.categories.NotificationsPanel;
 import com.blaze.house.categories.StatusBar;
 import com.blaze.house.categories.System;
-import com.blaze.house.categories.Hardware;
+import com.blaze.house.categories.Themes;
 
 import com.blaze.house.navigation.BubbleNavigationConstraintView;
 import com.blaze.house.navigation.BubbleNavigationChangeListener;
@@ -83,11 +84,13 @@ public class BlazeHouse extends SettingsPreferenceFragment implements
             public void onNavigationChanged(View view, int position) {
                 if (view.getId() == R.id.status_bar_category) {
                     viewPager.setCurrentItem(position, true);
+                } else if (view.getId() == R.id.notifications_panel_category) {
+                    viewPager.setCurrentItem(position, true);    
                 } else if (view.getId() == R.id.lockscreen_category) {
                     viewPager.setCurrentItem(position, true);
                 } else if (view.getId() == R.id.system_category) {
                     viewPager.setCurrentItem(position, true);
-                } else if (view.getId() == R.id.hardware_category) {
+                } else if (view.getId() == R.id.themes_category) {
                     viewPager.setCurrentItem(position, true);
                 }
             }
