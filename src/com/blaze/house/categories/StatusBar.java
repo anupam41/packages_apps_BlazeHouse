@@ -44,7 +44,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BLAZE_HOUSE;
+        return MetricsProto.MetricsEvent.CUSTOM_SETTINGS;
     }
 
     @Override

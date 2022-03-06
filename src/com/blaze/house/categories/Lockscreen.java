@@ -27,7 +27,7 @@ import com.android.settings.SettingsPreferenceFragment;
 
 public class Lockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    
+
     private static final String TAG = "Lockscreen";
 
     @Override
@@ -41,7 +41,7 @@ public class Lockscreen extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BLAZE_HOUSE;
+        return MetricsProto.MetricsEvent.CUSTOM_SETTINGS;
     }
 
     @Override
